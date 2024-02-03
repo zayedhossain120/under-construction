@@ -2,32 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.button-custom-color {
+  /* background-image: linear-gradient() */
+  overflow: hidden;
+
+  background: linear-gradient(92deg, #201937 0%, #2132a3 100%);
+}
+.button-custom-color:hover {
+  background: linear-gradient(92deg, #2b1c0d 0%, #ff0000 100%);
+  transition: 2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* main home page gradiant here */
+.custom-gradient {
+  background: linear-gradient(92deg, #5e4a99 0%, #001185 100%);
+  filter: blur(107px);
+  border-radius: 440px;
+  animation: mainBGAnimation infinite;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes mainBGAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+    transition: all;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  30% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+    background: linear-gradient(92deg, #136610 0%, #001185 100%);
+    transition: all;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  60% {
+    transform: rotate(-90deg);
+    opacity: 0.5;
+    background: linear-gradient(92deg, #9e060e 0%, #001185 100%);
+    transition: all;
+  }
+
+  90% {
+    transform: rotate(180deg);
+    opacity: 0.5;
+    transition: all;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.5;
   }
 }

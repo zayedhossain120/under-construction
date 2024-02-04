@@ -5,7 +5,7 @@ const EmailInput = () => {
     <>
       {/* /// test button */}
 
-      <div class="flex items-center justify-center mt-10">
+      <div class="flex items-center justify-center mt-16 md:mt-10 lg:mt-10 ">
         <div class="relative w-full">
           <input
             type="text"

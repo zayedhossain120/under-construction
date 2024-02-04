@@ -14,7 +14,7 @@ const EmailInput = () => {
             placeholder="Enter your email"
           />
           <button class="absolute inset-y-0 right-0  button-custom-color  text-white rounded-e-full m-[1px] px-6     ">
-            Notify Us
+            Notify
           </button>
         </div>
       </div>

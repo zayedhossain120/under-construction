@@ -15,7 +15,7 @@ const FloatingText = () => {
         ease: "easeInOut", // Easing function for a smooth effect
       }}
     >
-      <h1 className="text-center uppercase [font-size:_clamp(1.5em,4vw,2.7em)] md:tracking-[10px] lg:tracking-[15px] tracking-[8px] text-white">
+      <h1 className="text-center uppercase [font-size:_clamp(1.5em,4vw,2.7em)] md:tracking-[10px] lg:tracking-[15px] tracking-[8px] text-white font-krylon">
         Construction
       </h1>
     </motion.div>

@@ -16,10 +16,11 @@
 /* main home page gradiant here */
 .custom-gradient {
   background: linear-gradient(92deg, #5e4a99 0%, #001185 100%);
+  opacity: 0.5;
   filter: blur(107px);
   border-radius: 440px;
   animation: mainBGAnimation infinite;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
@@ -33,27 +34,35 @@
     transition: all;
   }
 
-  30% {
+  20% {
     transform: rotate(90deg);
-    opacity: 0.5;
+    opacity: 0.2;
     background: linear-gradient(92deg, #136610 0%, #001185 100%);
     transition: all;
   }
 
-  60% {
+  40% {
     transform: rotate(-90deg);
     opacity: 0.5;
     background: linear-gradient(92deg, #9e060e 0%, #001185 100%);
     transition: all;
   }
 
-  90% {
+  60% {
     transform: rotate(180deg);
     opacity: 0.5;
     transition: all;
+    background: linear-gradient(92deg, #250a10 0%, #03a126 100%);
+  }
+  80% {
+    transform: rotate(180deg);
+    opacity: 0.2;
+    transition: all;
+    background: linear-gradient(92deg, #250a10 0%, #f5cd47 100%);
   }
   100% {
     transform: rotate(360deg);
     opacity: 0.5;
+    background: linear-gradient(92deg, #250a10 0%, #b32cc9 100%);
   }
 }

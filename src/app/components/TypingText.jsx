@@ -49,7 +49,7 @@ export default function TypingText() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-10">
+    <div className="flex items-center justify-center mt-5 h-10">
       <motion.span className="text-center text-white [font-size:_clamp(0.9em,4vw,1.4)]">
         {displayText}
       </motion.span>

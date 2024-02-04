@@ -7,7 +7,7 @@ import TypingText from "./components/TypingText";
 
 export default function Home() {
   return (
-    <main className="flex py-5 md:py-12 lg:py-12 px-5 justify-center w-full mx-auto relative overflow-hidden h-screen  ">
+    <main className=" myFont flex py-5 md:py-12 lg:py-12 px-5 justify-center w-full mx-auto relative overflow-hidden  h-dvh   ">
       {/* all background */}
 
       <div className="absolute h-[440px] w-[440px]  custom-gradient  "></div>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className=" mb-4">
             <Logo />
           </div>
-          <h3 className="[font-size:_clamp(1.1em,4vw,1.5em)] text-white uppercase">
+          <h3 className="[font-size:_clamp(1.1em,4vw,1.5em)] text-white uppercase  ">
             EXPERT SQUAD
           </h3>
         </div>

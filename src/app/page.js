@@ -7,7 +7,7 @@ import TypingText from "./components/TypingText";
 
 export default function Home() {
   return (
-    <main className="flex py-16 px-5 m  justify-center w-full mx-auto relative overflow-hidden h-screen  border">
+    <main className="flex py-16 px-5 m  justify-center w-full mx-auto relative overflow-hidden h-screen  ">
       {/* all background */}
 
       <div className="absolute h-[440px] w-[440px]  custom-gradient  "></div>
